@@ -60,4 +60,4 @@ if __name__ == "__main__":
         event = generate_order()
         producer.send(EVENT_HUB_NAME, value=event)
         print("Sent:", event)
-        time.sleep(2)
+        time.sleep(1)

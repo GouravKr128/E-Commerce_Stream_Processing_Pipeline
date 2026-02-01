@@ -24,7 +24,7 @@ df_gold=(
     df_silver
     .withWatermark("timestamp","1 minute")
     .groupby(
-        window("timestamp","2 minute"),"state"
+        window("timestamp","1 minute"),"state"
     )
     .agg(
         sum("total_amount").alias("total_sales"),
