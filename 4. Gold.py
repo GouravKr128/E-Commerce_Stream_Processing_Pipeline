@@ -45,8 +45,7 @@ df_gold=(
     .format("delta")
     .outputMode("append")
     .option("checkpointLocation",gold_path+"checkpoint")
-    .option("path", gold_path) 
-    .toTable("project.rt_ecom.gold_tbl")
+    .start(gold_path) 
 )
 
 

@@ -19,7 +19,7 @@ producer = KafkaProducer(
     sasl_plain_username='$ConnectionString',
     sasl_plain_password=EVENT_HUB_CONNECTION_STRING,
     value_serializer=lambda v: json.dumps(v).encode('utf-8'),
-    api_version=(0, 10)
+    api_version=(1, 0, 0)
 )
 
 categories = ['Electronics', 'Books', 'Clothing', 'Home Decor', 'Toys']
